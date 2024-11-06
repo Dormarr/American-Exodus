@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: ph_jab
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 21300000, guid: bb3a0f9096d59d643a543153e98143e3, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 62a29910dde98984c84c2c28f60930cd, type: 3}
+    drivers:
+      keys:
+      - jabConnect
+      values: 01000000
+  - sprite: {fileID: 21300000, guid: f46c23b240561d74f92ab7c4429ef23c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: ac619dc765398bd4cb7b937300379095, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: d6359bbc946d3a940bc59b12b06e3e2d, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: c050db914b36ac148b9e405a937b0c53, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: f7e222d7822b13b43b9784862b4acb12, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 3b33760ecb35f4942951477fc81379ac, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: a947fa302d511934bbfb816068fed9b0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 89742f729f0bd58429ff45fa67088687, type: 3}
+    drivers:
+      keys:
+      - attackDone
+      values: 01000000
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: 1e4a1041-f12b-45bf-b391-ca98ff843fa4
+  drivers:
+    keys: []
+    values: 

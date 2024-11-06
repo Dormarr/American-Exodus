@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910dd784f5b74840bcf3929816025078, type: 3}
+  m_Name: ph_idle
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 21300000, guid: 91817e316cefeb44fa8f7a5f21c7fe4f, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: b05944c6bccf76540a511cdbd163578d, type: 3}
+  - sprite: {fileID: 21300000, guid: 48476bf6e00afd84384c9f9922afc541, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 07bbc1ff64172644a852a08963761183, type: 3}
+  - sprite: {fileID: 21300000, guid: 91a9a3f40b176eb4f96a466c0d2d29a7, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: c412e019aabe08549a297b75b754ede5, type: 3}
+  - sprite: {fileID: 21300000, guid: d21e99cbac281be4b9331cff5c8aa6b4, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 601ec3c78d660b946b3e1c1a1963c25d, type: 3}
+  - sprite: {fileID: 21300000, guid: 881da9d9b43feed41bde315f0d2d8d43, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: f9bcb27d72741964db56e0049b88d683, type: 3}
+  - sprite: {fileID: 21300000, guid: f01c20404dfe63846bcfbd527e934397, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 5e7c0de1f52f7104ebb3e0474a8184a7, type: 3}
+  - sprite: {fileID: 21300000, guid: 0191bbad7d6c9a248bd344fbdc68b435, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: a966cc3430798504c98e4cdac2ae8844, type: 3}
+  - sprite: {fileID: 21300000, guid: f651b378f27792541915fee7dbb6bc49, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 03a498f6d109c3e4099ad7f94b22d117, type: 3}
+  - sprite: {fileID: 21300000, guid: eebc777bc26aaa549882d8b79ac4e874, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: bffc377afca1ba344af62c23aa46a099, type: 3}
+  - sprite: {fileID: 21300000, guid: 507cf0866e8c3ee4fb69a57b06779d48, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: f5506564f8cf04049aa317fd89ce6f65, type: 3}
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: f2af944b-c390-41bc-81b2-2c3bef4cc2db
+  drivers:
+    keys: []
+    values: 
