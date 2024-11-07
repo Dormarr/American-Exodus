@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 rawInput = value.ReadValue<Vector2>();
         moveInput = new Vector2(rawInput.x, rawInput.y * 0.7f);
-        Debug.Log($"Raw Movement: {rawInput} --- Adjusted Movement: {moveInput}");
+        // Debug.Log($"Raw Movement: {rawInput} --- Adjusted Movement: {moveInput}");
 
         PlayerGlobals.DesiredDirection = rawInput;
     }
@@ -65,11 +65,14 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovementCanceled(InputAction.CallbackContext value)
     {
         moveInput = Vector2.zero;
-        PlayerGlobals.State = PlayerState.Idle;
+
+        if(PlayerGlobals.State == State.Movement){
+            PlayerGlobals.State = State.Idle;
+        }
     }
 
     private void OnLightAttack(InputAction.CallbackContext value){
-        PlayerGlobals.State = PlayerState.Attack;
+        PlayerGlobals.State = State.Attack;
     }
 
     private void UpdateMovement()
@@ -77,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput != Vector2.zero)
         {
             // Set the velocity directly to match the input and speed
-            PlayerGlobals.State = PlayerState.Movement;
+            PlayerGlobals.State = State.Movement;
             rb.velocity = moveInput * moveSpeed;
         }
         else
@@ -88,5 +91,7 @@ public class PlayerMovement : MonoBehaviour
             }
             rb.velocity = rb.velocity * 0.75f;
         }
+
+        PlayerGlobals.PlayerPosition = transform.position;
     }
 }

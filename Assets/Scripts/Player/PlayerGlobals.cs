@@ -2,20 +2,12 @@ using System;
 using UnityEngine;
 using Aarthificial.Reanimation;
 
-public enum PlayerState{
-    Idle = 0,
-    Movement = 1,
-    Attack = 2,
-    Damage = 3,
-    Dash = 4,
-    Dead = 5
-
-}
 
 public static class PlayerGlobals{
-    public static PlayerState State;
+    public static State State;
     public static Vector2 PlayerPosition;
     public static Vector2 DesiredDirection;
+    public static int FacingDirection;
     public static int MoveSpeed = 4;
     public static Reanimator Reanimator;
 

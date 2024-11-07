@@ -34,14 +34,14 @@ public class PlayerRenderer : MonoBehaviour
             facingDir = -1;
         }
 
-
+        PlayerGlobals.FacingDirection = facingDir;
 
         _reanimator.Flip = facingDir < 1;
         _reanimator.Set(Drivers.State, (int)PlayerGlobals.State);
     }
 
     void UpdatePlayerState(){
-        PlayerGlobals.State = PlayerState.Idle;
+        PlayerGlobals.State = State.Idle;
     }
 
     
