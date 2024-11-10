@@ -12,10 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910dd784f5b74840bcf3929816025078, type: 3}
   m_Name: ph_damage
   m_EditorClassIdentifier: 
-  cels: []
+  cels:
+  - sprite: {fileID: 21300000, guid: b40fdb4a0f6151945b5977a117f63fa8, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 50d13fe222eecd144aca440de5cc374a, type: 3}
+  - sprite: {fileID: 21300000, guid: 665d511b0f10afd4985833eb81781acc, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 996f84270b6cb074699e4a18525cfc14, type: 3}
+  - sprite: {fileID: 21300000, guid: f22870d6e3af96b4ab64c7bc8bfccf24, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: a73cebafe5af84d48995e418a9be01de, type: 3}
+  - sprite: {fileID: 21300000, guid: f4796b1dad083284db5dd6dbfe9c8411, type: 3}
+    drivers:
+      keys:
+      - damageDone
+      values: 01000000
+    spriteLeft: {fileID: 21300000, guid: bacf8c2cce9466649ba1754a06912f25, type: 3}
   controlDriver:
     name: 
-    autoIncrement: 0
+    autoIncrement: 1
     percentageBased: 0
     guid: c22797a2-8443-4a23-94f7-9b98250be2a7
   drivers:

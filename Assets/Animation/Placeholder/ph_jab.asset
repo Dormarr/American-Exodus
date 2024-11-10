@@ -12,10 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910dd784f5b74840bcf3929816025078, type: 3}
   m_Name: ph_jab
   m_EditorClassIdentifier: 
-  cels: []
+  cels:
+  - sprite: {fileID: 21300000, guid: ae03af65928b81a4382edf4f10f64ab2, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: f75da8bb2a8f7ee4eb402001553d3f88, type: 3}
+  - sprite: {fileID: 21300000, guid: adde9c8d8f5b788409f365c12f993082, type: 3}
+    drivers:
+      keys:
+      - jabConnect
+      values: 01000000
+    spriteLeft: {fileID: 21300000, guid: 0fa8f8ea48a74734194ae55d23555422, type: 3}
+  - sprite: {fileID: 21300000, guid: 8f83f47f9ef5b5241837499941fb2cbf, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 8a01c2614b0c370408fc623786e53b54, type: 3}
+  - sprite: {fileID: 21300000, guid: ea5f060154236174a99f986a7decebf2, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 27f0787557b378e4f977a7cb5959d5d0, type: 3}
+  - sprite: {fileID: 21300000, guid: f8107e9566ae09b499e6c7362a4255de, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 660c1d5181f82574895a82d32e160afd, type: 3}
+  - sprite: {fileID: 21300000, guid: 3f3451bc97d616549931f40191b65277, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 8ad6dfc7924a6994ba38edc175ddb318, type: 3}
+  - sprite: {fileID: 21300000, guid: 309406b26e8ff7947afd04893dfafe02, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 45d6b639c587ab04eb7e04eab334fd6e, type: 3}
+  - sprite: {fileID: 21300000, guid: 158fea032ce8bc94597ffd075681666e, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: 640b2992112c1bf4bb7397884d7f29ce, type: 3}
+  - sprite: {fileID: 21300000, guid: 679ed0c736b1c8541ae94cc416b0994a, type: 3}
+    drivers:
+      keys: []
+      values: 
+    spriteLeft: {fileID: 21300000, guid: f4e6757ae8081dd43a7fe10643a5e47a, type: 3}
+  - sprite: {fileID: 21300000, guid: ec7e399803e940c499b4d6d94405f547, type: 3}
+    drivers:
+      keys:
+      - attackDone
+      values: 01000000
+    spriteLeft: {fileID: 21300000, guid: 461d8e1ea691a6a4a944b112c98e4099, type: 3}
   controlDriver:
     name: 
-    autoIncrement: 0
+    autoIncrement: 1
     percentageBased: 0
     guid: 430fa643-0174-4a92-b932-9f35c181d15b
   drivers:

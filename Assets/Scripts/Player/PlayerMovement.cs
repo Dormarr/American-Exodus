@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     private Vector2 moveInput;
-    private int moveSpeed => PlayerGlobals.MoveSpeed;
+    private float moveSpeed => PlayerGlobals.MoveSpeed;
 
     public Vector2 DesiredDirection { get; private set; }
     public int FacingDirection { get; private set; } = 1;
@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = Vector2.zero;
 
+        // I need to find a new way to manage states, not too thrilled with this solution.
         if(PlayerGlobals.State == State.Movement){
             PlayerGlobals.State = State.Idle;
         }
@@ -73,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnLightAttack(InputAction.CallbackContext value){
         PlayerGlobals.State = State.Attack;
+        PlayerGlobals.AttackType = AttackType.Jab;
     }
 
     private void UpdateMovement()
@@ -89,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
             if(Mathf.Abs(rb.velocity.x) <= 0.0001f){
                 rb.velocity = moveInput;
             }
+            // Slow down rather than instant stop.
             rb.velocity = rb.velocity * 0.75f;
         }
 

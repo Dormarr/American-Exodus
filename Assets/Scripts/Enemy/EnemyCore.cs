@@ -48,6 +48,8 @@ public class EnemyCore : MonoBehaviour
 
         EnemyState = State.Damage;
         Debug.Log($"Damage Taken from {attackType}");
+
+        // If it's heavy damage, add velocity in opposite direction of relative player position.
     }
 
     private void SwitchState(){
