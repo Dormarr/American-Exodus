@@ -15,11 +15,18 @@ public class EnemyCore : MonoBehaviour
         public const string DamageDone = "damageDone";
     }
 
+    // TEMPORARY
+    private int health = 5;
+    private bool isDead = false;
+
+
 
     private Reanimator _reanimator;
     public Guid EnemyID { get; private set; } //UNUSED - But might use later.
     public Vector2 EnemyPosition { get; private set; }
     public State EnemyState { get; private set; }
+
+    private bool inAttackRange = false;
 
     private void Awake(){
         _reanimator = GetComponentInChildren<Reanimator>();
@@ -37,6 +44,10 @@ public class EnemyCore : MonoBehaviour
         AnimationHandler();
     }
 
+    private void AnimationHandler(){
+        _reanimator.Set(EnemyDrivers.State, (int)EnemyState);
+    }
+
     public void Attack(){
         // Attack the player.
 
@@ -46,19 +57,32 @@ public class EnemyCore : MonoBehaviour
     public void Damage(AttackType attackType){
         // Take damage, trigger damage animations.
 
+        if(isDead){
+            return;
+        }
+
         EnemyState = State.Damage;
         Debug.Log($"Damage Taken from {attackType}");
 
-        MasterDir.ProceedToNextStage();
+        health--;
+
+        if(health <= 0){
+            Die();
+        }
 
         // If it's heavy damage, add velocity in opposite direction of relative player position.
+    }
+
+    public void Die(){
+        // Remove any colliders.
+
+        // Temporary to demonstrate level stage development.
+        MasterDir.ProceedToNextStage();
+        EnemyState = State.Dead;
     }
 
     private void SwitchState(){
         EnemyState = State.Idle;
     }
 
-    private void AnimationHandler(){
-        _reanimator.Set(EnemyDrivers.State, (int)EnemyState);
-    }
 }
